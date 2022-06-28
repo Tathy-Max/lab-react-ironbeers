@@ -1,6 +1,16 @@
 import { Header } from "../../components/Header/index";
+import { useState } from "react";
 
 export function NewBeer() {
+  const [form, setForm] = useState({
+    name: "",
+    tagline: "",
+    description: "",
+    first_brewed: "",
+    brewers_tips: "",
+    attenuation_level: "",
+    contributed_by: "",
+  });
   return (
     <>
       <div>
@@ -9,3 +19,7 @@ export function NewBeer() {
     </>
   );
 }
+
+
+
+contributed_by - must be type text

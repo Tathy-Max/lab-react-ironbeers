@@ -6,8 +6,7 @@ import { Home } from "./Pages/Home";
 import { Beers } from "./Pages/Beers";
 import { RandomBeer } from "./Pages/RandomBeer";
 import { NewBeer } from "./Pages/NewBeer";
-// import { SingleBeer } from "./Pages/SingleBeer";
-import { BeerDetails } from "./Pages/beerDetails";
+import { SingleBeer } from "./Pages/SingleBeer";
 
 function App() {
   return (
@@ -17,7 +16,7 @@ function App() {
         <Route path="/beers" element={<Beers />} />
         <Route path="/random-beer" element={<RandomBeer />} />
         <Route path="/new-beer" element={<NewBeer />} />
-        <Route path="/beers/:beerId" element={<BeerDetails />} />
+        <Route path="/beers/:beerId" element={<SingleBeer />} />
       </Routes>
     </div>
   );
