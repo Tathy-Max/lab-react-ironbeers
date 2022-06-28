@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import axios from "axios";
 import allBeers from "../../assets/beers.png";
 import randomBeer from "../../assets/random-beer.png";
 import newBeer from "../../assets/new-beer.png";
